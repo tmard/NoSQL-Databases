@@ -39,9 +39,9 @@ There are two technical products with the submission of the following deliverabl
 
 Use NoSQL_setup_starter.ipynb for this section of the challenge.
 
-    1. Import the data provided in the establishments.json file from Terminal.\
-    Name the database uk_food and the collection establishments.\ 
-    The used to import the data from Terminal to a markdown cell in the notebook is provided.
+    1. Import the data provided in the establishments.json file from Terminal.
+    Name the database uk_food and the collection establishments. 
+    Then import the data from Terminal to a markdown cell in the notebook is provided.
     
     2. Within the notebook, import the libraries needed: PyMongo and Pretty Print (pprint).
     
@@ -50,8 +50,8 @@ Use NoSQL_setup_starter.ipynb for this section of the challenge.
     4. Confirm that the database was created and loaded the data properly:
         * List the databases in MongoDB. Confirm that uk_food is listed.
         * List the collection(s) in the database to ensure that establishments is there.
-        * Find and display one document in the establishments collection using\
-        find_one and display with pprint.
+        * Find and display one document in the establishments collection using find_one 
+        and display with pprint.
         
     5. Assign the establishments collection to a variable to prepare the collection for use.
 
@@ -62,19 +62,20 @@ Use NoSQL_setup_starter.ipynb for this section of the challenge.
 
 Use NoSQL_setup_starter.ipynb for this section of the challenge.
 
-The magazine editors have some requested modifications for the database prior to performing any queries or analysis. Make the following changes to the establishments collection:
+The magazine editors requested modifications for the database prior to performing any queries or analysis. The following changes were made to the establishments collection:
 
-    1. An exciting new halal restaurant just opened in Greenwich, but has not been rated yet.\
-    The magazine has asked to include it in the analysis. 
+    1. Include an exciting new halal restaurant that just opened in Greenwich in the analysis. 
 
-    2. Find the BusinessTypeID for "Restaurant/Cafe/Canteen".\
+    2. Find the BusinessTypeID for "Restaurant/Cafe/Canteen".
     Return only the BusinessTypeID and BusinessType fields.
 
     3. Update the new restaurant with the BusinessTypeID found.
 
-    4. The magazine is not interested in any establishments in Dover, so check how many documents contain the Dover Local Authority. Then, remove any establishments within the Dover Local Authority from the database, and check the number of documents to ensure they were deleted.
+    4. The magazine is not interested in any establishments in Dover.
+    The number of documents contained by the Dover Local Authority was checked and removed.
+    The number of documents were re-checked to ensure they were deleted. 
 
-    5. Some of the number values are stored as strings, when they should be stored as numbers. Use update_many to convert latitude and longitude to decimal numbers.
+    5. Use update_many to convert latitude and longitude to decimal numbers.
     
 
 
@@ -85,29 +86,35 @@ Eat Safe, Love have specific questions they want answered, which will help them 
 
 Use the NoSQL_analysis_starter.ipynb for this section. Some notes to be aware of while you are exploring the dataset:
 
-    * RatingValue refers to the overall rating decided by the Food Authority and ranges from 1-5. The higher the value, the better the rating. Note: This field also includes non-numeric values such as 'Pass', where 'Pass' means that the establishment passed their inspection but isn't given a number rating.
+    * RatingValue refers to the overall rating decided by the Food Authority and ranges from 1-5. 
+    The higher the value, the better the rating. 
+    Note: This field also includes non-numeric values such as 'Pass', 
+    where 'Pass' means the establishment passed inspection but is not given a number rating.
     
-    * The scores for Hygiene, Structural, and ConfidenceInManagement work in reverse. This means, the higher the value, the worse the establishment is in these areas.
+    * The scores for Hygiene, Structural, and ConfidenceInManagement work in reverse. 
+    The higher the value, the worse the establishment is in these areas.
 
 
 Use the following questions to explore the database, and find the answers, to provide to the magazine editors.
 
 Unless otherwise stated, for each question:
 
-    * Use count_documents to display the number of documents contained in the result.
+* Use count_documents to display the number of documents contained in the result.
     
-    * Display the first document in the results using pprint.
+* Display the first document in the results using pprint.
     
-    * Convert the result to a Pandas DataFrame, print the number of rows in the DataFrame, and display the first 10 rows.
+* Convert the result to a Pandas DataFrame, print the number of rows in the DataFrame, and display the first 10 rows.
 
 
     1. Which establishments have a hygiene score equal to 20?
     
     2. Which establishments in London have a RatingValue greater than or equal to 4?
     
-    3. What are the top 5 establishments with a RatingValue of '5', sorted by lowest hygiene score, nearest to the new restaurant added, "Penang Flavours"? 
+    3. What are the top 5 establishments with a RatingValue of '5', sorted by lowest hygiene score, 
+    nearest to the new restaurant added, "Penang Flavours"? 
     
-    4. How many establishments in each Local Authority area have a hygiene score of 0? Sort the results from highest to lowest, and print out the top ten local authority areas.
+    4. How many establishments in each Local Authority area have a hygiene score of 0? 
+    Sort the results from highest to lowest, and print out the top ten local authority areas.
 
 
 
