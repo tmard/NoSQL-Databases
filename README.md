@@ -18,7 +18,7 @@ Table of Contents
 ## Background
   
 
-The UK Food Standards Agency evaluates various establishments across the United Kingdom and gives them a food hygiene rating. I have been contracted by the editors of a food magazine, *Eat Safe, Love,* to evaluate some of the ratings data in order to help the journalists and food critics decide where to focus future articles.
+The UK Food Standards Agency evaluates various establishments across the United Kingdom and gives them a food hygiene rating. I have been contracted by the editors of a food magazine, *Eat Safe, Love*, to evaluate some of the ratings data in order to help the journalists and food critics decide where to focus future articles.
   
   
 
@@ -40,8 +40,8 @@ There are two technical products with the submission of the following deliverabl
 Use NoSQL_setup_starter.ipynb for this section of the challenge.
 
     1. Import the data provided in the establishments.json file from Terminal.
-    Name the database uk_food and the collection establishments. 
-    Then import the data from Terminal to a markdown cell in the notebook is provided.
+       Name the database uk_food and the collection establishments. 
+       Then import the data from Terminal to a markdown cell in the notebook is provided.
     
     2. Within the notebook, import the libraries needed: PyMongo and Pretty Print (pprint).
     
@@ -51,7 +51,7 @@ Use NoSQL_setup_starter.ipynb for this section of the challenge.
         * List the databases in MongoDB. Confirm that uk_food is listed.
         * List the collection(s) in the database to ensure that establishments is there.
         * Find and display one document in the establishments collection using find_one 
-        and display with pprint.
+          and display with pprint.
         
     5. Assign the establishments collection to a variable to prepare the collection for use.
 
@@ -67,13 +67,13 @@ The magazine editors requested modifications for the database prior to performin
     1. Include an exciting new halal restaurant that just opened in Greenwich in the analysis. 
 
     2. Find the BusinessTypeID for "Restaurant/Cafe/Canteen".
-    Return only the BusinessTypeID and BusinessType fields.
+       Return only the BusinessTypeID and BusinessType fields.
 
     3. Update the new restaurant with the BusinessTypeID found.
 
     4. The magazine is not interested in any establishments in Dover.
-    The number of documents contained by the Dover Local Authority was checked and removed.
-    The number of documents were re-checked to ensure they were deleted. 
+       The number of documents contained by the Dover Local Authority was checked and removed.
+       The number of documents were re-checked to ensure they were deleted. 
 
     5. Use update_many to convert latitude and longitude to decimal numbers.
     
@@ -82,17 +82,17 @@ The magazine editors requested modifications for the database prior to performin
 ## Part 3: Exploratory Analysis
 
 
-Eat Safe, Love have specific questions they want answered, which will help them find the locations they wish to visit and avoid.
+*Eat Safe, Love* have specific questions they want answered. This will help them find the locations they wish to visit and avoid.
 
-Use the NoSQL_analysis_starter.ipynb for this section. Some notes to be aware of while you are exploring the dataset:
+Use the NoSQL_analysis_starter.ipynb for this section. Some notes to be aware of while exploring the dataset:
 
     * RatingValue refers to the overall rating decided by the Food Authority and ranges from 1-5. 
-    The higher the value, the better the rating. 
-    Note: This field also includes non-numeric values such as 'Pass', 
-    where 'Pass' means the establishment passed inspection but is not given a number rating.
+      The higher the value, the better the rating. 
+      Note: This field also includes non-numeric values such as 'Pass', 
+      where 'Pass' means the establishment passed inspection but is not given a number rating.
     
     * The scores for Hygiene, Structural, and ConfidenceInManagement work in reverse. 
-    The higher the value, the worse the establishment is in these areas.
+      The higher the value, the worse the establishment is in these areas.
 
 
 Use the following questions to explore the database, and find the answers, to provide to the magazine editors.
@@ -111,10 +111,10 @@ Unless otherwise stated, for each question:
     2. Which establishments in London have a RatingValue greater than or equal to 4?
     
     3. What are the top 5 establishments with a RatingValue of '5', sorted by lowest hygiene score, 
-    nearest to the new restaurant added, "Penang Flavours"? 
+       nearest to the new restaurant added, "Penang Flavours"? 
     
     4. How many establishments in each Local Authority area have a hygiene score of 0? 
-    Sort the results from highest to lowest, and print out the top ten local authority areas.
+       Sort the results from highest to lowest, and print out the top ten local authority areas.
 
 
 
