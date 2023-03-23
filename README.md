@@ -18,7 +18,7 @@ Table of Contents
 ## Background
   
 
-The UK Food Standards Agency evaluates various establishments across the United Kingdom and gives them a food hygiene rating. I have been contracted by the editors of a food magazine, Eat Safe, Love, to evaluate some of the ratings data in order to help the journalists and food critics decide where to focus future articles.
+The UK Food Standards Agency evaluates various establishments across the United Kingdom and gives them a food hygiene rating. I have been contracted by the editors of a food magazine, *Eat Safe, Love,* to evaluate some of the ratings data in order to help the journalists and food critics decide where to focus future articles.
   
   
 
@@ -27,7 +27,7 @@ The UK Food Standards Agency evaluates various establishments across the United 
 
 There are two technical products with the submission of the following deliverables:
 
-* **Deliverable 1:** A Jupyter notebook containing code that imports the data and sets up and updates the uk_food database.
+* **Deliverable 1:** A Jupyter notebook containing code that imports the data, sets up and updates the uk_food database.
 
 * **Deliverable 2:** A Jupyter notebook containing code that performs the exploratory analysis queries in the database.
 
@@ -39,7 +39,9 @@ There are two technical products with the submission of the following deliverabl
 
 Use NoSQL_setup_starter.ipynb for this section of the challenge.
 
-    1. Import the data provided in the establishments.json file from Terminal. Name the database uk_food and the collection establishments. Provide the cody used to import the data from Terminal to a markdown cell in the notebook.
+    1. Import the data provided in the establishments.json file from Terminal.\
+    Name the database uk_food and the collection establishments.\ 
+    The used to import the data from Terminal to a markdown cell in the notebook is provided.
     
     2. Within the notebook, import the libraries needed: PyMongo and Pretty Print (pprint).
     
@@ -48,7 +50,8 @@ Use NoSQL_setup_starter.ipynb for this section of the challenge.
     4. Confirm that the database was created and loaded the data properly:
         * List the databases in MongoDB. Confirm that uk_food is listed.
         * List the collection(s) in the database to ensure that establishments is there.
-        * Find and display one document in the establishments collection using find_one and display with pprint.
+        * Find and display one document in the establishments collection using\
+        find_one and display with pprint.
         
     5. Assign the establishments collection to a variable to prepare the collection for use.
 
@@ -61,9 +64,11 @@ Use NoSQL_setup_starter.ipynb for this section of the challenge.
 
 The magazine editors have some requested modifications for the database prior to performing any queries or analysis. Make the following changes to the establishments collection:
 
-    1. An exciting new halal restaurant just opened in Greenwich, but has not been rated yet. The magazine has asked to include it in the analysis. 
+    1. An exciting new halal restaurant just opened in Greenwich, but has not been rated yet.\
+    The magazine has asked to include it in the analysis. 
 
-    2. Find the BusinessTypeID for "Restaurant/Cafe/Canteen" and return only the BusinessTypeID and BusinessType fields.
+    2. Find the BusinessTypeID for "Restaurant/Cafe/Canteen".\
+    Return only the BusinessTypeID and BusinessType fields.
 
     3. Update the new restaurant with the BusinessTypeID found.
 
